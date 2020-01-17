@@ -4,6 +4,7 @@ tasks.pdf
 task 1/src/bin
 task 1/src/config
 task 1/src/debug
+task 1/examples
 task 1/target
 task 2/.idea
 task 3/.DS_Store
