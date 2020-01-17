@@ -1,0 +1,36 @@
+<assembly>
+    <id>apprelease</id>
+    <formats>
+      <format>zip</format>
+    </formats>
+    <fileSets>
+      <fileSet>
+        <directory>src/config</directory>
+        <outputDirectory>config</outputDirectory>
+        <includes>
+            <include>*.*</include>
+        </includes>
+      </fileSet>
+      <fileSet>
+        <directory>src/</directory>
+        <outputDirectory>config</outputDirectory>
+        <includes>
+            <include>*.ini</include>
+        </includes>
+      </fileSet>
+      <fileSet>
+        <directory>src/bin</directory>
+        <outputDirectory>product</outputDirectory>
+        <includes>
+          <include>*.dll</include>
+        </includes>
+      </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>src/bin/doit.exe</source>
+            <outputDirectory>/</outputDirectory>
+            <destName>launcher.exe</destName>
+        </file>
+    </files>
+</assembly>
